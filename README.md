@@ -54,7 +54,7 @@ MongoDB中的集合用来保存一组文档，相当于关系型数据库中的�
 
 或者：
 ```Python
->>> collection = db.test_collection
+>>> collection = db["test_collection"]
 ```
 
 要注意的是，数据库以及集合都是延迟创建的，也就是说执行上面的命令实际上不会在MongoDB的服务器端进行任何操作，只有当第一个文档插进去的时候，它们才会被创建。
